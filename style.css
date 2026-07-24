@@ -404,3 +404,63 @@ nav ul{
 }
 
 }
+
+/* ================= CHEFS ================= */
+
+.chefs{
+    padding:100px 0;
+    background:#181818;
+}
+
+.chef-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.chef-card{
+    background:#222;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    transition:.3s;
+}
+
+.chef-card:hover{
+    transform:translateY(-8px);
+}
+
+.chef-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.chef-info{
+    padding:25px;
+}
+
+.chef-info h3{
+    font-size:1.5rem;
+    margin-bottom:8px;
+    font-family:'Playfair Display',serif;
+}
+
+.chef-info p{
+    color:#d4af37;
+    font-weight:500;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .chef-grid{
+        grid-template-columns:1fr;
+    }
+
+    .chef-card img{
+        height:300px;
+    }
+
+}
