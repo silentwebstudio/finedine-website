@@ -366,30 +366,52 @@
             <h2>Book Your Table</h2>
         </div>
 
-        <form class="reservation-form">
+       <form class="reservation-form"
+      action="https://formspree.io/f/xnjegbqn"
+      method="POST">
 
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number" required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required>
 
-            <input type="date" required>
-            <input type="time" required>
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required>
 
-            <select required>
-                <option value="">Guests</option>
-                <option>1 Person</option>
-                <option>2 People</option>
-                <option>3 People</option>
-                <option>4 People</option>
-                <option>5+ People</option>
-            </select>
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        required>
 
-            <button class="btn" type="submit">
-                Reserve Table
-            </button>
+    <input
+        type="date"
+        name="date"
+        required>
 
-        </form>
+    <input
+        type="time"
+        name="time"
+        required>
 
+    <select name="guests" required>
+        <option value="">Guests</option>
+        <option>1 Person</option>
+        <option>2 People</option>
+        <option>3 People</option>
+        <option>4 People</option>
+        <option>5+ People</option>
+    </select>
+
+    <button class="btn" type="submit">
+        Reserve Table
+    </button>
+
+</form>
     </div>
 
 </section>
