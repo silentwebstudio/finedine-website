@@ -1,1 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
+body{
+    font-family:'Poppins',sans-serif;
+    background:#111;
+    color:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(0,0,0,.7);
+    backdrop-filter:blur(10px);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+}
+
+.logo{
+    text-decoration:none;
+    font-size:2rem;
+    font-weight:700;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#d4af37;
+}
+
+.menu-btn{
+    display:none;
+    color:#fff;
+    font-size:1.7rem;
